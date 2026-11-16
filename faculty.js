@@ -87,6 +87,6 @@ app.delete("/api/v1/faculty/:id", (req, res) => {
         });
     }
 });
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log("Server is running at http://localhost:8080/api/v1/faculty");
 });
